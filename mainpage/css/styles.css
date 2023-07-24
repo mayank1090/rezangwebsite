@@ -1,4 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,500);
+@import url("http://fonts.googleapis.com/css?family=Raleway:400,700,500");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Black+Han+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0 auto;
+}
 /*
 Author: webthemez.com
 Author URL: http://webthemez.com
@@ -507,8 +513,16 @@ margin: 0 8px;
 #our-team .team-member:hover .social-icons > li > a {
   background: rgb(195, 54, 11);
   color: #FFFFFF;
-  border: 1px solid #C3360B;
+  border: 1px solid rgb(195, 54, 11);
 }
+.social-icons > li >:hover{
+  background-color: #0a0a0a !important;
+  color: #FFFFFF;
+  }
+
+  .social-icons > li > a:hover{
+    transform:  scale(1.2);
+  }
  
 #our-team .social-icons {
   list-style: none;
@@ -812,3 +826,23 @@ padding: 7px 0 0;
 
   color: #FFF;
 }
+
+img.let {
+  width: 15.8125rem;
+  height: 5.8125rem;
+  margin-top: 20px;
+}
+
+#main-nav.navbar-default {
+  background: #EEE;}
+
+  .navbar-default .navbar-nav>li>a{
+    color: #000;
+text-align: center;
+font-family: Roboto;
+font-size: 2.25rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
+  }

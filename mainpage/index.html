@@ -1,299 +1,830 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
     <title>Rezang La</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet"> 
-    <link rel="shortcut icon" href="images/ico/favicon.ico"> 
-    
-</head> 
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="shortcut icon" href="images/ico/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,100;0,200;0,500;1,100;1,200;1,500&family=Roboto:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,100;0,200;0,500;1,100;1,200;1,500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
+  </head>
 
-<body id="home" >
+  <body id="home">
+    <header class="scroll-section">
+      <nav
+        id="main-nav"
+        class="navbar-expand-lg navbar navbar-default navbar-fixed-top"
+        role="banner"
+      >
+        <div class="container anyotherone">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle navbutton"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"
+              ><img class="let" src="./images/LOGO.png" alt="logo"
+            /></a>
+          </div>
 
-    <header   class="scroll-section">
-        <nav id="main-nav" class=" navbar-expand-lg navbar navbar-default navbar-fixed-top" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button  type="button" class="navbar-toggle navbutton" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img class="let" src="./images/358197304_6355212904570528_8147299896730908878_n.jpg" alt="logo"></a>
-                </div>
-				
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="scroll"><a href="#home">Home</a></li>
-                        <li class="scroll"><a href="#features">Features</a></li>
-                        <li class="scroll"><a href="#about">About</a></li>
-                        <li class="scroll"><a href="#contact-us">Contact</a></li>                        
-                    </ul>
-                </div>
-            </div><!--/.container-->
-        </nav><!--/nav-->
-    </header><!--/header-->
+          <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+              <li class="scroll"><a href="#home">Home</a></li>
+              <li class="scroll"><a href="#features">Features</a></li>
+              <li class="scroll"><a href="#about">About</a></li>
+              <li class="scroll"><a href="#our-team">Team</a></li>
+              <li class="scroll"><a href="#services">Services</a></li>
+              <li class="scroll"><a href="#contact-us">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--/.container-->
+      </nav>
+      <!--/nav-->
+    </header>
+    <!--/header-->
 
     <section id="hero-banner">
-             <div class="banner-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                 
-                                    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore.</p>
-                                    <a class="btn btn-primary btn-lg" href="#">Read More</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    </section><!--/#main-slider-->
+      <div class="banner-inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+              <a class="btn btn-primary btn-lg" href="#">Read More</a>
+              <div class="wrapper">
+                <a class="link" href="#" target="_blank">
+                  <div class="color"></div>
+                  <span>READ MORE</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/#main-slider-->
 
     <section id="hero-text" class="wow fadeIn">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-9">
-                    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum. 
-                    </p>
-                </div>
-                <div class="col-sm-3 text-right">
-                    <a class="btn btn-primary btn-lg" href="#">Get It Now!</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9">
+            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              eget risus vitae massa semper aliquam quis mattis quam. Morbi
+              vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus
+              ut euismod massa, eu eleifend ipsum.
+            </p>
+          </div>
+          <div class="col-sm-3 text-right">
+            <a class="btn btn-primary btn-lg" href="#">Get It Now!</a>
+          </div>
         </div>
-    </section><!--/#hero-text-->
+      </div>
+    </section>
+    <!--/#hero-text-->
 
-    <section id="features"  class="scroll-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Awesome Features</h2> 
-				<p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
-            <div class="row">               
-                <div class="col-md-6">
-                    <div class="media service-box wow fadeInRight">
-                        <div class="pull-left">
-                            <i class="fa fa-rss"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">User Research</h4>
-                            <p>Fusce non fermentum mi. Praesent vel lobortis elit. Nulla sodales, risus quis sollicitudin iaculis, felis dolor aliquet purus, eget elementum velit nunc eu dolor. </p>
-                        </div>
-                    </div>
-
-                    <div class="media service-box wow fadeInRight">
-                        <div class="pull-left">
-                            <i class="fa fa-cogs"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Visual Designing</h4>
-                            <p>Fusce non fermentum mi. Praesent vel lobortis elit. Nulla sodales, risus quis sollicitudin iaculis, felis dolor aliquet purus, eget elementum velit nunc eu dolor.</p>
-                        </div>
-                    </div>
-</div>
-<div class="col-md-6">
-                    <div class="media service-box wow fadeInRight">
-                        <div class="pull-left">
-                            <i class="fa fa-line-chart"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">UI Development</h4>
-                            <p>Fusce non fermentum mi. Praesent vel lobortis elit. Nulla sodales, risus quis sollicitudin iaculis, felis dolor aliquet purus, eget elementum velit nunc eu dolor. </p>
-                        </div>
-                    </div>
-
-                    <div class="media service-box wow fadeInRight">
-                        <div class="pull-left">
-                            <i class="fa fa-cloud-upload"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Quality Test</h4>
-                            <p>Fusce non fermentum mi. Praesent vel lobortis elit. Nulla sodales, risus quis sollicitudin iaculis, felis dolor aliquet purus, eget elementum velit nunc eu dolor. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="features" class="scroll-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title text-center wow fadeInDown">
+            Awesome Features
+          </h2>
+          <p class="text-center wow fadeInDown">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            eget risus vitae massa <br />
+            semper aliquam quis mattis quam.
+          </p>
         </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="media service-box wow fadeInRight">
+              <div class="pull-left">
+                <i class="fa fa-rss"></i>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">User Research</h4>
+                <p>
+                  Fusce non fermentum mi. Praesent vel lobortis elit. Nulla
+                  sodales, risus quis sollicitudin iaculis, felis dolor aliquet
+                  purus, eget elementum velit nunc eu dolor.
+                </p>
+              </div>
+            </div>
+
+            <div class="media service-box wow fadeInRight">
+              <div class="pull-left">
+                <i class="fa fa-cogs"></i>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Visual Designing</h4>
+                <p>
+                  Fusce non fermentum mi. Praesent vel lobortis elit. Nulla
+                  sodales, risus quis sollicitudin iaculis, felis dolor aliquet
+                  purus, eget elementum velit nunc eu dolor.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="media service-box wow fadeInRight">
+              <div class="pull-left">
+                <i class="fa fa-line-chart"></i>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">UI Development</h4>
+                <p>
+                  Fusce non fermentum mi. Praesent vel lobortis elit. Nulla
+                  sodales, risus quis sollicitudin iaculis, felis dolor aliquet
+                  purus, eget elementum velit nunc eu dolor.
+                </p>
+              </div>
+            </div>
+
+            <div class="media service-box wow fadeInRight">
+              <div class="pull-left">
+                <i class="fa fa-cloud-upload"></i>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Quality Test</h4>
+                <p>
+                  Fusce non fermentum mi. Praesent vel lobortis elit. Nulla
+                  sodales, risus quis sollicitudin iaculis, felis dolor aliquet
+                  purus, eget elementum velit nunc eu dolor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
- <section id="about"  class="scroll-section">
-        <div class="container">
-
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">About Us</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 wow fadeInLeft">
-                  <img class="img-responsive" src="images/about.png" alt="">
-                </div>
-
-                <div class="col-sm-6 wow fadeInRight">
-                    <h3 class="column-title">Our Company</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
-
-                    <p>Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus consequat ultricies. Donec feugiat tempor turpis, rutrum sagittis mi venenatis at. Sed molestie lorem a blandit congue. Ut pellentesque odio quis leo volutpat, vitae vulputate felis condimentum. </p>
-
-					<p>Praesent vulputate fermentum lorem, id rhoncus sem vehicula eu. Quisque ullamcorper, orci adipiscing auctor viverra, velit arcu malesuada metus, in volutpat tellus sem at justo.</p>
-
-
-                    <a class="btn btn-primary" href="#">Learn More</a>
-
-                </div>
-            </div>
+    <section id="about" class="scroll-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title text-center wow fadeInDown">About Us</h2>
+          <p class="text-center wow fadeInDown">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            eget risus vitae massa <br />
+            semper aliquam quis mattis quam.
+          </p>
         </div>
-    </section><!--/#about-->
 
-    <section id="contact-us"  class="scroll-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Contact Us</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
+        <div class="row">
+          <div class="col-sm-6 wow fadeInLeft">
+            <img class="img-responsive" src="images/about.png" alt="" />
+          </div>
+
+          <div class="col-sm-6 wow fadeInRight">
+            <h3 class="column-title">Our Company</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              eget risus vitae massa semper aliquam quis mattis quam. Morbi
+              vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus
+              ut euismod massa, eu eleifend ipsum.
+            </p>
+
+            <p>
+              Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec
+              purus eu tellus consequat ultricies. Donec feugiat tempor turpis,
+              rutrum sagittis mi venenatis at. Sed molestie lorem a blandit
+              congue. Ut pellentesque odio quis leo volutpat, vitae vulputate
+              felis condimentum.
+            </p>
+
+            <p>
+              Praesent vulputate fermentum lorem, id rhoncus sem vehicula eu.
+              Quisque ullamcorper, orci adipiscing auctor viverra, velit arcu
+              malesuada metus, in volutpat tellus sem at justo.
+            </p>
+
+            <a class="btn btn-primary" href="#">Learn More</a>
+          </div>
         </div>
+      </div>
+    </section>
+    <!--/#about-->
+
+    <section id="our-team" class="scroll-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title text-center wow fadeInDown">Amazing Team</h2>
+          <p class="text-center wow fadeInDown">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            eget risus vitae massa <br />
+            semper aliquam quis mattis quam.
+          </p>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div
+              class="team-member wow fadeInUp"
+              data-wow-duration="400ms"
+              data-wow-delay="0ms"
+            >
+              <div class="team-img">
+                <img class="img-responsive" src="images/team/01.jpg" alt="" />
+              </div>
+              <div class="team-info">
+                <h3>John Deo</h3>
+                <span>Founder</span>
+                <p>
+                  Personalized trai access rcises, amin ders malesuada id dolor
+                  non, elemen tum auctor arcu. Cras consectet
+                </p>
+              </div>
+              <ul class="social-icons">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div
+              class="team-member wow fadeInUp"
+              data-wow-duration="400ms"
+              data-wow-delay="100ms"
+            >
+              <div class="team-img">
+                <img class="img-responsive" src="images/team/02.jpg" alt="" />
+              </div>
+              <div class="team-info">
+                <h3>Mike Timobbs</h3>
+                <span>President</span>
+                <p>
+                  Personalized trai access rcises, amin ders malesuada id dolor
+                  non, elemen tum auctor arcu. Cras consectet
+                </p>
+              </div>
+              <ul class="social-icons">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div
+              class="team-member wow fadeInUp"
+              data-wow-duration="400ms"
+              data-wow-delay="200ms"
+            >
+              <div class="team-img">
+                <img class="img-responsive" src="images/team/03.jpg" alt="" />
+              </div>
+              <div class="team-info">
+                <h3>Remo Silvaus</h3>
+                <span>Architect</span>
+                <p>
+                  Personalized trai access rcises, amin ders malesuada id dolor
+                  non, elemen tum auctor arcu. Cras consectet
+                </p>
+              </div>
+              <ul class="social-icons">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div
+              class="team-member wow fadeInUp"
+              data-wow-duration="400ms"
+              data-wow-delay="300ms"
+            >
+              <div class="team-img">
+                <img class="img-responsive" src="images/team/04.jpg" alt="" />
+              </div>
+              <div class="team-info">
+                <h3>Niscal Deon</h3>
+                <span>Manager</span>
+                <p>
+                  Personalized trai access rcises, amin ders malesuada id dolor
+                  non, elemen tum auctor arcu. Cras consectet
+                </p>
+              </div>
+              <ul class="social-icons">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" >
-        
-        <div class="container">
-            <div class="container contact-info">
-                <div class="row">
-				  <div class="col-sm-4 col-md-4">
-                        <div class="contact-form">
-                            <h3>Contact Info</h3>
+    <section id="business-stats">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title text-center wow fadeInDown">
+            Business Stats
+          </h2>
+          <p class="text-center wow fadeInDown">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            eget risus vitae massa <br />
+            semper aliquam quis mattis quam.
+          </p>
+        </div>
 
-                            <address>
-                              <strong>Amazing Company, Inc.</strong><br>
-                              12345 NewYork, Street 125<br>
-                              United States 94107<br>
-                              <abbr title="Phone">P:</abbr> (123) 456-7890
-                            </address>
-					</div></div>
-                    <div class="col-sm-8 col-md-8">
-                        <div class="contact-form">
-                       
-                            <form id="main-contact-form" name="contact-form" method="post" action="#">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
+        <div class="row text-center">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div
+              class="wow fadeInUp"
+              data-wow-duration="400ms"
+              data-wow-delay="0ms"
+            >
+              <div
+                class="business-stats"
+                data-digit="6850"
+                data-duration="1000"
+              >
+                <div class="box">
+                  <div class="count font" data-time="2000">8450</div>
                 </div>
+              </div>
+              <strong>Clients</strong>
             </div>
-        </div>   
-   </section><!--/#bottom-->
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div
+              class="wow fadeInUp"
+              data-wow-duration="400ms"
+              data-wow-delay="100ms"
+            >
+              <div
+                class="business-stats"
+                data-digit="1465"
+                data-duration="1000"
+              >
+                <div class="box">
+                  <div class="count font" data-time="2000">1450</div>
+                </div>
+              </div>
+              <strong>Completed</strong>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div
+              class="wow fadeInUp"
+              data-wow-duration="400ms"
+              data-wow-delay="200ms"
+            >
+              <div
+                class="business-stats"
+                data-digit="4325"
+                data-duration="1000"
+              >
+                <div class="box">
+                  <div class="count font" data-time="2000">3450</div>
+                </div>
+              </div>
+              <strong>In Progress</strong>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div
+              class="wow fadeInUp"
+              data-wow-duration="400ms"
+              data-wow-delay="300ms"
+            >
+              <div
+                class="business-stats"
+                data-digit="2568"
+                data-duration="1000"
+              >
+                <div class="box">
+                  <div class="count font" data-time="2000">8450</div>
+                </div>
+              </div>
+              <strong>Revenue</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="scroll-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title text-center wow fadeInDown">Our Services</h2>
+          <p class="text-center wow fadeInDown">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            eget risus vitae massa <br />
+            semper aliquam quis mattis quam.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="features">
+            <div
+              class="col-md-4 col-sm-6 wow fadeInUp"
+              data-wow-duration="300ms"
+              data-wow-delay="0ms"
+            >
+              <div class="media service-box">
+                <div class="pull-left">
+                  <i class="fa fa-futbol-o"></i>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Mobile App</h4>
+                  <p>
+                    Backed by some of the biggest names in the industry, Firefox
+                    OS is an open platform that fosters greater
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
+
+            <div
+              class="col-md-4 col-sm-6 wow fadeInUp"
+              data-wow-duration="300ms"
+              data-wow-delay="100ms"
+            >
+              <div class="media service-box">
+                <div class="pull-left">
+                  <i class="fa fa-compass"></i>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Custom App</h4>
+                  <p>
+                    Backed by some of the biggest names in the industry, Firefox
+                    OS is an open platform that fosters greater
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
+
+            <div
+              class="col-md-4 col-sm-6 wow fadeInUp"
+              data-wow-duration="300ms"
+              data-wow-delay="200ms"
+            >
+              <div class="media service-box">
+                <div class="pull-left">
+                  <i class="fa fa-database"></i>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">E-Commerce</h4>
+                  <p>
+                    Morbi vitae tortor tempus, placerat leo et, suscipit lectus.
+                    Phasellus ut euismod massa, eu eleifend ipsum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
+
+            <div
+              class="col-md-4 col-sm-6 wow fadeInUp"
+              data-wow-duration="300ms"
+              data-wow-delay="300ms"
+            >
+              <div class="media service-box">
+                <div class="pull-left">
+                  <i class="fa fa-bar-chart"></i>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">CMS App</h4>
+                  <p>
+                    Morbi vitae tortor tempus, placerat leo et, suscipit lectus.
+                    Phasellus ut euismod massa, eu eleifend ipsum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
+
+            <div
+              class="col-md-4 col-sm-6 wow fadeInUp"
+              data-wow-duration="300ms"
+              data-wow-delay="400ms"
+            >
+              <div class="media service-box">
+                <div class="pull-left">
+                  <i class="fa fa-paper-plane-o"></i>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Product Dev</h4>
+                  <p>
+                    Morbi vitae tortor tempus, placerat leo et, suscipit lectus.
+                    Phasellus ut euismod massa, eu eleifend ipsum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
+
+            <div
+              class="col-md-4 col-sm-6 wow fadeInUp"
+              data-wow-duration="300ms"
+              data-wow-delay="500ms"
+            >
+              <div class="media service-box">
+                <div class="pull-left">
+                  <i class="fa fa-bullseye"></i>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">SharePoint</h4>
+                  <p>
+                    Morbi vitae tortor tempus, placerat leo et, suscipit lectus.
+                    Phasellus ut euismod massa, eu eleifend ipsum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
+          </div>
+        </div>
+        <!--/.row-->
+      </div>
+      <!--/.container-->
+    </section>
+    <!--/#services-->
+
+    <section id="contact-us" class="scroll-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title text-center wow fadeInDown">Contact Us</h2>
+          <p class="text-center wow fadeInDown">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            eget risus vitae massa <br />
+            semper aliquam quis mattis quam.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="container contact-info">
+          <div class="row">
+            <div class="col-sm-4 col-md-4">
+              <div class="contact-form">
+                <h3>Contact Info</h3>
+
+                <address>
+                  <strong>Amazing Company, Inc.</strong><br />
+                  12345 NewYork, Street 125<br />
+                  United States 94107<br />
+                  <abbr title="Phone">P:</abbr> (123) 456-7890
+                </address>
+              </div>
+            </div>
+            <div class="col-sm-8 col-md-8">
+              <div class="contact-form">
+                <form
+                  id="main-contact-form"
+                  name="contact-form"
+                  method="post"
+                  action="#"
+                >
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="subject"
+                      class="form-control"
+                      placeholder="Subject"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      name="message"
+                      class="form-control"
+                      rows="8"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/#bottom-->
 
     <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    &copy; 2023 Company Name Rezangla Template by <a target="_blank" href="http://Rezangla.com/" title="Free">Rezangla.com</a>
-                </div>
-                <div class="col-sm-6">
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="#"><i class="fa fa-github"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            &copy; 2023 Company Name Rezangla Template by
+            <a target="_blank" href="http://Rezangla.com/" title="Free"
+              >Rezangla.com</a
+            >
+          </div>
+          <div class="col-sm-6">
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-github"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </footer><!--/#footer-->
-   <script>
-
-      document.addEventListener('DOMContentLoaded', function () {
-        const scrollLinks = document.querySelectorAll('.scroll a'); // Select the child "a" tags within elements with class "scroll"
-  console.log(scrollLinks);
-        // Add click event listeners to each scroll link
+      </div>
+    </footer>
+    <!--/#footer-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollLinks = document.querySelectorAll(".scroll a");
         scrollLinks.forEach(function (link) {
-          link.addEventListener('click', function (event) {
+          link.addEventListener("click", function (event) {
             event.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            console.log(targetId)
+            const targetId = this.getAttribute("href").substring(1);
             const targetElement = document.getElementById(targetId);
-    
+
             if (targetElement) {
               targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
+                behavior: "smooth",
+                block: "start",
               });
-    
+
               // Remove "active" class from all navigation links
               scrollLinks.forEach(function (link) {
-                link.parentElement.classList.remove('active'); // Add ".parentElement" to select the <li> element
+                link.parentElement.classList.remove("active");
               });
-    
+
               // Add "active" class to the clicked navigation link's parent <li> element
-              this.parentElement.classList.add('active'); // Add ".parentElement" to select the <li> element
+              this.parentElement.classList.add("active");
             }
           });
         });
-    
-        // Use Intersection Observer API to handle active class on page load or scrolling
+
         const observerOptions = {
           root: null,
-          rootMargin: '0px',
-          threshold: 0.5, // Adjust this value based on your preference
+          rootMargin: "0px",
+          threshold: 0.5,
         };
-    
+
         const observerCallback = (entries, observer) => {
           entries.forEach((entry) => {
-            const targetId = entry.target.getAttribute('id');
+            const targetId = entry.target.getAttribute("id");
             const targetLink = document.querySelector(`a[href="#${targetId}"]`);
-    
+
             if (entry.isIntersecting) {
               // Add "active" class to the corresponding navigation link's parent <li> element
               if (targetLink) {
-                targetLink.parentElement.classList.add('active'); // Add ".parentElement" to select the <li> element
+                targetLink.parentElement.classList.add("active");
               }
             } else {
               // Remove "active" class from the corresponding navigation link's parent <li> element
               if (targetLink) {
-                targetLink.parentElement.classList.remove('active'); // Add ".parentElement" to select the <li> element
+                targetLink.parentElement.classList.remove("active");
               }
             }
           });
         };
-    
-        const observer = new IntersectionObserver(observerCallback, observerOptions);
-    
-        // Observe all sections with class "scroll-section"
-        const scrollSections = document.querySelectorAll('.scroll-section');
+
+        const observer = new IntersectionObserver(
+          observerCallback,
+          observerOptions
+        );
+        const scrollSections = document.querySelectorAll(".scroll-section");
         scrollSections.forEach((section) => {
           observer.observe(section);
         });
 
-        const anyone = document.querySelector(".navbutton")
+        const navbarToggle = document.querySelector(".navbar-toggle");
+        const navbarCollapse = document.querySelector(".navbar-collapse");
 
-        anyone.addEventListener("click", function(){
+        navbarToggle.addEventListener("click", function () {
+          navbarCollapse.classList.toggle("collapse");
+        });
 
-            document.querySelector(".navbar-right").classList.toggle("collapse")
-        })
+        var count = document.querySelectorAll(".count");
+        var arr = Array.from(count);
+
+        count.innerHTML = "";
+        var zero = 0;
+
+        arr.map((item) => {
+          var val = item.innerHTML;
+
+          function counter() {
+            item.innerHTML = zero++;
+            if (zero > val) {
+              clearInterval(fun);
+            }
+          }
+
+          let fun = setInterval(() => {
+            counter();
+          }, item.dataset.time / val);
+        });
+
+        new WOW().init();
       });
     </script>
-    </script>
-</body>
+  </body>
 </html>
