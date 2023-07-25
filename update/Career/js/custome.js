@@ -111,3 +111,9 @@ document.querySelectorAll('ul.nav > li > a').forEach((nav) => {
 
         new WOW().init();
       });
+
+      $(document).ready(function() {
+        $('a[data-toggle="collapse"]').click(function(event) {
+          event.preventDefault();
+        });
+      });

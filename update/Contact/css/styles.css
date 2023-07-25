@@ -508,7 +508,7 @@ margin: 0 8px;
 #our-team .team-member:hover .social-icons > li > a {
 
 }
-.social-icons > li >:hover{
+.social-icons > .teamone >:hover{
   background-color: #0a0a0a !important;
   color: #FFFFFF;
   }
