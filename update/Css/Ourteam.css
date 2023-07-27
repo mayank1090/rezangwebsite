@@ -124,7 +124,7 @@ ul.nostyle i {
 border-radius: 0;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-border-color: #45B1DA;
+border-color: #fff;
 }
 .navbar-nav>li>a {
 text-transform: uppercase;
@@ -162,7 +162,7 @@ text-transform: uppercase;
 background: #FFFFFF;
 }
 #main-nav.navbar-default .navbar-nav > li.active > a, #main-nav.navbar-default .navbar-nav > li.open > a, #main-nav.navbar-default .navbar-nav > li:hover > a {
-}
+color: #FFFFFF}
 .navbar.navbar-default {
   border: 0;
   border-radius: 0;
@@ -831,10 +831,10 @@ img.let {
 }
 
 #main-nav.navbar-default {
-  background: #EEE;}
+  background: #011E11;}
 
   .navbar-default .navbar-nav>li>a{
-    color: #000;
+    color: #fff;
 text-align: center;
 font-family: Roboto;
 font-size: 2.25rem;
@@ -846,4 +846,28 @@ text-transform: capitalize;
 
   .social-icons > li >:hover .letoyy{
     color: white !important;
+  }
+
+
+  .slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider-track {
+    display: flex;
+    transition: transform 1s ease; /* Slide animation duration and easing */
+    /* Adjust the width of the slider track to fit one slide at a time */
+    width: calc(100% * var(--total-images));
+  }
+  
+  .slider-image {
+    width: calc(100% / var(--total-images)); /* Adjust the width of each slide to fit one slide at a time */
+    height: auto;
+  }
+  
+  .img-responsive{
+    max-width: 300px;
+    max-height: 300px;
   }
