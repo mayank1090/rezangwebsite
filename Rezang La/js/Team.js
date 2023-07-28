@@ -32,16 +32,17 @@ const sliderTrack = document.querySelector(".slider-track");
 const sliderImages = document.querySelectorAll(".slider-image");
 const totalImages = sliderImages.length; // Get the total number of images
 let currentIndex = 0;
+let imagesPerSlide; // Number of images to display at a time (will be calculated dynamically)
 let slideWidth; // Will be calculated dynamically
 let sliderInterval; // Store the interval ID
 
 function updateSlideWidth() {
-  slideWidth = sliderContainer.clientWidth;
+  slideWidth = sliderContainer.clientWidth / imagesPerSlide;
   sliderTrack.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 }
 
 function nextSlide() {
-  currentIndex++;
+  currentIndex += imagesPerSlide;
   if (currentIndex >= totalImages) {
     currentIndex = 0;
     sliderTrack.style.transition = "none";
@@ -52,13 +53,28 @@ function nextSlide() {
   }
 }
 
+function calculateImagesPerSlide() {
+  const screenWidth = window.innerWidth;
+  if (screenWidth < 768) {
+    // Phone view: Display 1 slider image
+    imagesPerSlide = 1;
+  } else if (screenWidth < 1024) {
+    // Tablet view: Display 2 slider images
+    imagesPerSlide = 2;
+  } else {
+    // Laptop view and larger: Display 3 slider images
+    imagesPerSlide = 3;
+  }
+}
+
 function startSlider() {
   // Set the custom property "--total-images" to the total number of images
   sliderTrack.style.setProperty('--total-images', totalImages);
-  
-  // Calculate and update the slide width before starting the slider
+
+  // Calculate initial images per slide and slide width
+  calculateImagesPerSlide();
   updateSlideWidth();
-  
+
   sliderInterval = setInterval(nextSlide, 3000);
 }
 
@@ -66,8 +82,12 @@ function pauseSlider() {
   clearInterval(sliderInterval);
 }
 
-// Update slideWidth when the window is resized
-window.addEventListener("resize", updateSlideWidth);
+// Recalculate images per slide and slide width on window resize
+window.addEventListener("resize", () => {
+  calculateImagesPerSlide();
+  updateSlideWidth();
+});
+
 
 // Start the slider when the page loads
 startSlider();

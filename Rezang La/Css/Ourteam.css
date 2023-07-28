@@ -231,7 +231,7 @@ color: #FFFFFF}
 #hero-banner{
   overflow: hidden;
   height:650px;
-  background: url('../images/banner/bg1.jpg');
+  background: url('./images/banner/bg1.jpg');
   background-size:cover;
   color:#fff;
 }
@@ -789,6 +789,18 @@ text-align: center;
   -webkit-box-shadow: none;
 }
 @media only screen and (max-width: 480px) {
+
+  .slider-track {
+    display: flex;
+    transition: transform 1s ease; /* Slide animation duration and easing */
+    /* Adjust the width of the slider track to fit one slide at a time */
+    width: calc(100% * var(--total-images)) !important;
+  }
+  
+  .slider-image {
+    width: calc(100% / var(--total-images)); /* Adjust the width of each slide to fit one slide at a time */
+    height: auto;
+  }
 #portfolio .portfolio-filter {
 list-style: none;
 padding: 0;
@@ -812,6 +824,36 @@ margin: 9px auto;
 #portfolio .portfolio-item .portfolio-item-inner .portfolio-info {
 padding: 7px 0 0;
 }
+}
+
+@media only screen and (max-width: 700px) and (min-width:480px){
+
+  .slider-track {
+    display: flex;
+    transition: transform 1s ease; /* Slide animation duration and easing */
+    /* Adjust the width of the slider track to fit one slide at a time */
+    width: calc(100% * var(--total-images)) !important;
+  }
+  
+  .slider-image {
+    width: calc(100% / var(--total-images)); /* Adjust the width of each slide to fit one slide at a time */
+    height: auto;
+  }}
+
+@media only screen and (max-width: 1200px) and (min-width:700px){
+   
+  .slider-track {
+    display: flex;
+    transition: transform 1s ease; /* Slide animation duration and easing */
+    /* Adjust the width of the slider track to fit one slide at a time */
+    width: calc(50% * var(--total-images)) !important;
+  }
+  
+  .slider-image {
+    width: calc(100% / var(--total-images)); /* Adjust the width of each slide to fit one slide at a time */
+    height: auto;
+  }
+  
 }
 
 
@@ -859,7 +901,7 @@ text-transform: capitalize;
     display: flex;
     transition: transform 1s ease; /* Slide animation duration and easing */
     /* Adjust the width of the slider track to fit one slide at a time */
-    width: calc(100% * var(--total-images));
+    width: calc(33% * var(--total-images));
   }
   
   .slider-image {
@@ -871,3 +913,4 @@ text-transform: capitalize;
     max-width: 300px;
     max-height: 300px;
   }
+
